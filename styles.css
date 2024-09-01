@@ -1,0 +1,344 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #4b0082; /* Indigo color for purplish theme */
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    display: inline;
+    font-size: 24px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #dda0dd; /* Light purple on hover */
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px; /* To prevent overlap with fixed header */
+}
+
+.hero-content {
+    text-align: center;
+    background: rgba(75, 0, 130, 0.8); /* Semi-transparent overlay */
+    padding: 40px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #dda0dd; /* Light purple */
+    color: #4b0082; /* Indigo text */
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ba55d3; /* Medium orchid on hover */
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0;
+    background: #f8f0ff; /* Light purplish background */
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #4b0082;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item i {
+    font-size: 40px;
+    color: #dda0dd;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    margin-bottom: 15px;
+    color: #4b0082;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Screenshots Section */
+.screenshots {
+    padding: 80px 0;
+}
+
+.screenshots h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #4b0082;
+}
+
+.screenshots-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.screenshots-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.screenshots-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Download Section */
+.download {
+    padding: 80px 0;
+    background: #f8f0ff;
+}
+
+.download h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #4b0082;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-google, .btn-appstore {
+    display: flex;
+    align-items: center;
+    background: #dda0dd;
+    color: #4b0082;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.btn-google:hover, .btn-appstore:hover {
+    background: #ba55d3;
+}
+
+.btn-google i, .btn-appstore i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4b0082;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: center;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background: #4b0082;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #dda0dd;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1001; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        background: #4b0082;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: #fff;
+        float: right;
+        cursor: pointer;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+
+    .features-grid, .screenshots-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
